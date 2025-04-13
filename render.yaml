@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: poe-backend-lek
+    env: node
+    plan: free
+    buildCommand: ""
+    startCommand: "node server.js"
+    envVars:
+      - key: POE_SESSION
+        sync: false
